@@ -23,7 +23,7 @@ export default async function CardWrapper() {
   } = await fetchCardData();
 
   return (
-    <div>
+    <>
       {/* NOTE: Uncomment this code in Chapter 9 */}
 
       { <Card title="Collected" value={totalPaidInvoices} type="collected" />}
@@ -34,7 +34,7 @@ export default async function CardWrapper() {
         value={numberOfCustomers}
         type="customers"
       /> }
-    </div>
+    </>
   );
 }
 
